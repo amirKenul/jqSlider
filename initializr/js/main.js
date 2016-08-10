@@ -29,7 +29,7 @@ count=0;
 $(function(){
 	$("#upBut").on('click',function(){
 		
-		$(".imageLitle").css("background-image:"+count[0]);
+		$(".imageLitle").css("background-image:"+image[0]);
 		count++;
 		if(count==4){
 			count=0;
