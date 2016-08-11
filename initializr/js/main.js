@@ -49,6 +49,22 @@ $(function(){
 
 })*/
 
-$("#containerSlide.allslide").animate({
-	margin-top:"-=653px"})
+var height:653;
+var countslide=1;
+
+var $slider= $("#containerSlide");
+var $slidecont = $slider. find(".allslide");
+var $slides = $slidecont.find("#slider");
+
+$("#downBut").on("click",function(){
+
+$slidecont.animate({"margin-top":"-="+height});
+
+countslide++;
+if(countslide==$slides){
+	countslide=1;
+	$slidecont.css("margin-top",0);
+}
+	  
+})
 
