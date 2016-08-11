@@ -60,6 +60,12 @@ i{
 	color:#fff;//kogda ego ubirayu image podnimayetsa neverx;
 	opacity:0.5;
 }
+#downBut:hover, #upBut:hover{
+
+	opacity:0.6;
+	transition:all .3s ease-out;
+
+}
 
 .litlePart{
 	/*margin-top:50%;*/

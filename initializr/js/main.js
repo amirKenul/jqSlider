@@ -28,13 +28,32 @@ count=0;
 
 $(function(){
 	$("#upBut").on('click',function(){
-		
-		$(".imageLitle").css("background-image:"+image[0]);
 		count++;
-		if(count==4){
+		$(".imageLitle").css("background-image",image[count]);
+		
+		if(count==image.length){
 			count=0;
-
-
 	});
 		}
+});
+
+
+var height=650px;
+var countSlide=1;
+var $slider=$("#slider");
+var $container=$(".container-fluid");
+$(function(){
+	$("#upBut").on('click',function(){	
+	$(".container-fluid").animate({"margit-top:-="+height}
+		countSlide++;
+		if(countSlide==$slider.lenght){
+			countSlide=1;
+			$container.css("margin-top:0");
+
+
+
+		})
+
+});
+
 })
