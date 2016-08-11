@@ -1,24 +1,24 @@
-
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-
 *{
 	margin:0;
 	padding:0;
 }
- .container-fluid{
+ .allslide{
+ 	height:3918px;
  	width:100%;
- 	height:650px;
+  	
+  ;
+ 	
+  }
+  #containerSlide{
+  	width:100%;
+ 	height:653px;
  	overflow: hidden;
+ 	background-repeat: no-repeat;
   }
 
  #slider{
-  background-repeat: no-repeat;
-  width:100%;
-  height:700px;
   background-size:cover;
+  height:653px;
   }
 
 
@@ -26,6 +26,7 @@
 .someWord{
 	width:500px;
 	margin-top:65%;
+
 
 }
 
@@ -57,7 +58,7 @@ h2{
 //part with upp-down ikons;
 
 i{
-	color:#fff;//kogda ego ubirayu image podnimayetsa neverx;
+	color:#fff;/*kogda ego ubirayu image podnimayetsa neverx;*/
 	opacity:0.5;
 }
 #downBut:hover, #upBut:hover{
@@ -80,13 +81,5 @@ i{
   border: 4px solid #fff;
   float: right;
   background-size:cover;
+  /*background-image:url(../img/1.jpg);*/
   }
-
-
-
-
-
-
-
-
-

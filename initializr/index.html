@@ -19,15 +19,12 @@
   <link rel="stylesheet" href="font-awesome/cssf/font-awesome.min.css">
   <style>
  
-  .container-fluid{
-  }
- 
- 
   
   </style>
 </head>
 <body>
-  <div class="container-fluid" >
+<div class="container-fluid" id="containerSlide">
+  <div class="container-fluid allslide" >
     <div id="slider" style="background-image:url('img/1.jpg')">
       <div class="container">
         <div class="row" >
@@ -47,7 +44,7 @@
                 </ul>
                 
               </div>
-            <div class="imageLitle" style="background-image:url('img/1.jpg');float: right;">
+            <div class="imageLitle" style="float:right;">
               </div> 
             </div>
           </div>
@@ -69,6 +66,67 @@
         </div>
       </div>
     </div>
+     <div id="slider" style="background-image:url('img/3.jpg')">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-5">
+            <div class="someWord">
+              <h2>Dreamer</h2>
+              <p> AND IF SHE HASN’T BEEN REWRITTEN, THEN THEY ARE STILL USING HER. FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS.</p>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+    </div>
+     <div id="slider" style="background-image:url('img/4.jpg')">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-5">
+            <div class="someWord">
+              <h2>Dreamer</h2>
+              <p> AND IF SHE HASN’T BEEN REWRITTEN, THEN THEY ARE STILL USING HER. FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS.</p>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+    </div>
+     <div id="slider" style="background-image:url('img/5.jpg')">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-5">
+            <div class="someWord">
+              <h2>Dreamer</h2>
+              <p> AND IF SHE HASN’T BEEN REWRITTEN, THEN THEY ARE STILL USING HER. FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS.</p>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+    </div>
+     <div id="slider" style="background-image:url('img/6.jpg')">
+      <div class="container">
+        <div class="row" >
+          <div class="col-md-5">
+            <div class="someWord">
+              <h2>Dreamer</h2>
+              <p> AND IF SHE HASN’T BEEN REWRITTEN, THEN THEY ARE STILL USING HER. FAR FAR AWAY, BEHIND THE WORD MOUNTAINS, FAR FROM THE COUNTRIES VOKALIA AND CONSONANTIA, THERE LIVE THE BLIND TEXTS.</p>
+            </div>
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
@@ -76,4 +134,41 @@
 </body>
 </html>
 <script>
+
+
+
+var imageS=["img/1.jpg","img/2.jpg","img/3.jpg","img/4.jpg","img/5.jpg","img/6.jpg"];
+
+$(".imageLitle").css("background-image","url("+imageS[0]+")");
+var count=0;
+
+  $("#downBut").on("click",function(){
+        $(".imageLitle").css("background-image","url("+imageS[count]+")");
+        count++;
+
+    if(count==imageS.length){
+      count=0;//birinci shekili goture bilmir goturmur;
+    }
+  });
+
+$("#upBut").on("click",function(){
+ 
+ 
+ if(count==0){
+    count=imageS.length-1;
+  }
+   count--;
+   console.log(count)
+  $(".imageLitle").css("background-image","url("+imageS[count]+")");
+})
+
+
+
+
+
+ 
+
+
+
+
 </script>
