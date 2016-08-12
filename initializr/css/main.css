@@ -22,7 +22,7 @@
  	background-repeat: no-repeat;
   }
 
- #slider{
+ .slider{
   background-size:cover;
   height:653px;
   }
@@ -76,8 +76,11 @@ i{
 
 .litlePart{
 	/*margin-top:50%;*/
-	position:fixed;
+	
 	margin-top: 15%;
+	position: absolute;
+	left:850px;
+
 
 }
 
