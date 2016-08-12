@@ -49,13 +49,13 @@ $(function(){
 
 })*/
 
-var height:653;
+var height=653;
 var countslide=1;
 
 var $slider= $("#containerSlide");
 var $slidecont = $slider. find(".allslide");
 var $slides = $slidecont.find("#slider");
-
+/*
 $("#downBut").on("click",function(){
 
 $slidecont.animate({"margin-top":"-="+height});
@@ -66,5 +66,12 @@ if(countslide==$slides){
 	$slidecont.css("margin-top",0);
 }
 	  
-})
+})*/
 
+$("#downBut").on("click",function(){
+	$(".allslide").css({
+	 "margin-top": "-="+height+"px"});
+
+
+
+})
