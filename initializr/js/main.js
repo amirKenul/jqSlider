@@ -90,11 +90,12 @@ $("#upBut").on("click",function(){
 	$(".allslide").css({
 	 "margin-top": "+=653px"});
 	
-	if (countslide==0) {
-		countslide=$(".slider").length-1;
-		/*$(".allslide").css({"margin-top":"-3918px"});*/
+	if ($(".allslide").css({"margin-top":"0px"});) {
+
+		
+		$(".allslide").css({"margin-top":"-3918px"});
 	}
 
-
+*/
 
 })
