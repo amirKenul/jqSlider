@@ -90,12 +90,12 @@ $("#upBut").on("click",function(){
 	$(".allslide").css({
 	 "margin-top": "+=653px"});
 	
-	if ($(".allslide").css({"margin-top":"0px"});) {
+	if ($(".allslide").css({"margin-top":"0px"})==true) {
 
 		
 		$(".allslide").css({"margin-top":"-3918px"});
 	}
 
-*/
+
 
 })
