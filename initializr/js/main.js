@@ -50,7 +50,7 @@ $(function(){
 })*/
 
 var height=653;
-var countslide=0;
+var countslide=1;
 
 var $slider= $("#containerSlide");
 var $slidecont = $slider. find(".allslide");
@@ -71,13 +71,13 @@ if(countslide==$slides){
 
 $("#downBut").on("click",function(){
 
-	$(".allslide").css({
-	 "margin-top": "-=653px"});
+	$(".allslide").animate({
+	 "margin-top": "-=653px"},1000);
 	
 	countslide++;
 
 	if (countslide==$(".slider").length) {
-		countslide=0;
+		countslide=1;
 		$(".allslide").css({"margin-top":"0px"});
 	}
 
@@ -87,14 +87,13 @@ $("#downBut").on("click",function(){
 
 $("#upBut").on("click",function(){
 
-	$(".allslide").css({
-	 "margin-top": "+=653px"});
+	$(".allslide").animate({
+	 "margin-top": "+=653px"},1000);
 	
-	if ($(".allslide").css({"margin-top":"0px"})==true) {
-
-		
+	/*if (countslide==0) {
+		countslide=$(".slider").length-1;
 		$(".allslide").css({"margin-top":"-3918px"});
-	}
+	}*/
 
 
 
